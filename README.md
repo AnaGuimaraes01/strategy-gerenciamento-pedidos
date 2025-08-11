@@ -1,0 +1,1 @@
+# strategy-gerenciamento-pedidos
