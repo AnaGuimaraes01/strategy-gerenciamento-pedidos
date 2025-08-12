@@ -5,18 +5,12 @@ import main.java.strategy.*;
 
 import java.util.Scanner;
 
-/**
- * Classe principal que executa o programa.
- * 
- * Aqui o usuário escolhe a estratégia em tempo de execução.
- */
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("=== Sistema de Pedidos ===");
+        System.out.println("SISTEMA DE PEDIDOS");
         
-        // Entrada de dados
         System.out.print("Descrição do pedido: ");
         String descricao = sc.nextLine();
 
@@ -27,9 +21,9 @@ public class Main {
         System.out.println("1 - Sedex");
         System.out.println("2 - PAC");
         System.out.println("3 - Retirada na Loja");
+        System.out.print("Digite uma opção: ");
         int opcao = sc.nextInt();
 
-        // Define a estratégia baseada na escolha do usuário
         CalculoFrete estrategia;
 
         switch (opcao) {

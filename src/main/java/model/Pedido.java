@@ -1,17 +1,8 @@
 package main.java.model;
 
-
-
 import main.java.strategy.CalculoFrete;
 
-/**
- * Classe que representa um Pedido.
- * 
- * O padrão Strategy aparece aqui: 
- * usamos a interface CalculoFrete como atributo.
- * Assim, podemos mudar a forma de cálculo 
- * sem alterar o código da classe.
- */
+/*Classe que representa um Pedido. Usamos a interface CalculoFrete como atributo. Assim, podemos mudar a forma de cálculo sem alterar o código da classe.*/
 public class Pedido {
     private String descricao;
     private double peso;
